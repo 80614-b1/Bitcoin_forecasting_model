@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body {
+        background-image: url('https://img.freepik.com/free-vector/cryptocurrency-bitcoin-golden-coin-background_1017-31505.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703376000&semt=sph');
+        }
+
+        h1 {
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+
+            margin-top : 50px;
+            margin-bottom: 50px;
+        }
+
+        h5 {
+            margin-bottom: 50px;
+        }
+
+        div {
+            margin-bottom: 50px;
+        }
+
+        /* Additional styles for background animation */
+        @keyframes colorChange {
+            0%, 10% {
+                background-color: #3498db;
+<!--                    background-color: #c0c0c0-->
+            }
+            20%, 30% {
+                background-color: #e74c3c;
+            }
+            40%, 50% {
+                background-color: #2ecc71;
+            }
+            60%, 70% {
+                background-color: #f39c12;
+            }
+            80%, 90% {
+                background-color: #9b59b6;
+            }
+            100% {
+                background-color: #34495e;
+            }
+        }
+
+        .container {
+            animation: colorChange 30s infinite; /* 30 seconds duration, infinite loop */
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-box {
+        margin-top : 20px;
+        font-size: 30px;
+        }
+
+        .headers {
+        padding : 5px;
+<!--        background-color: #FFFFFF;-->
+        }
+    </style>
+    <title>Bitcoin Prediction Model</title>
+</head>
+<body>
+<!--    <img src="https://img.freepik.com/free-vector/cryptocurrency-bitcoin-golden-coin-background_1017-31505.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703376000&semt=sph" alt="Logo description">-->
+    <div>
+    <div class="container">
+
+        <div class="headers">
+
+        <h1 style="text-align: center">Welcome to Bitcoin Price Prediction Model</h1>
+        <h3 style="text-align: center">Our goal is to forecast future developments in the cryptocurrency market.</h3>
+        </div>
+
+        <h5 style="text-align: left">Current Price of Bitcoin (26 Dec 2023): 43726.77 USD($)</h5>
+
+        <form method="POST" action="/classify">
+            <div class="row">
+                <div class="col">
+                    <div class="text-box">Number of days <input class="form-control" name="Number of days" type="number" placeholder="Input Should be Valid Integer"> </div>
+                </div>
+            </div>
+            <button class="btn btn-success">Predict BTC ₿</button>
+        </form>
+    </div>
+
+    </div>
+</body>
+</html>
